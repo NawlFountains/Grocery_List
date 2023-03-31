@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="4dp"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="?colorOnPrimary">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="16dp"
             android:text="Line 1"
-            android:textColor="@color/black"
+            android:textColor="?colorOnSecondary"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -29,7 +30,7 @@
             android:layout_below="@+id/text_view"
             android:layout_marginStart="16dp"
             android:text="Line 2"
-            android:textColor="@color/black"
+            android:textColor="?colorOnPrimaryVariant"
             android:textSize="15sp" />
 
         <ImageView
@@ -39,6 +40,26 @@
             android:src="@drawable/ic_delete"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="82dp"
+            android:src="@drawable/ic_add" />
+
+        <ImageView
+            android:id="@+id/image_sub"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="130dp"
+            android:src="@drawable/ic_sub" />
 
 
     </RelativeLayout>

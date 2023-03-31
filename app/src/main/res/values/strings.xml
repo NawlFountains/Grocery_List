@@ -3,6 +3,8 @@
     <string name="add_btn_content">Add item to the list</string>
     <string name="item_name">Name</string>
     <string name="item_quantity">Quantity</string>
-    <string name="item_explanation">Introduce the name and quantity of your item</string>
+    <string name="item_explanation">Introduce name and quantity of your item</string>
+    <string name="item_modification_explanation">Modify the amount of your item</string>
     <string name="item_add">ADD</string>
+    <string name="item_modify">MODIFY</string>
 </resources>

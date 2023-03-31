@@ -1,45 +1,29 @@
-package com.example.grocerylist.model
+import java.io.Serializable
 
-class Item(private var name: String, private var quantity: Int) {
+/**
+ * Class item
+ * Models the caracteristic of an item with name and amount
+ * @author Nahuel Fuentes
+ */
+class Item (private var name: String, private var amount: Int = 1): Serializable {
 
-    /**
-     * Decrease one quantity and return boolean if it has been removed
-     */
-    fun decreaseQuantity(): Boolean {
-        var toReturn = false
-        if (quantity > 0) {
-            quantity--
-            toReturn = true
-        }
-        return toReturn
-    }
-
-    /**
-     * Increase one quantity
-     */
-    fun incrementQuantity() {
-        quantity++
-    }
-
-    /**
-     * Set a new name for the item
-     */
-    fun setName(newName: String) {
-        name = newName
-    }
-
-    /**
-     * Returns name of the item, type string
-     */
     fun getName(): String {
-        return name
+        return name;
+    }
+    fun getAmount(): Int {
+        return amount;
+    }
+    fun setName(newName: String) {
+        name = newName;
     }
 
-    /**
-     * Returns quantity of the item, type integer
-     */
-    fun getQuantity(): Int {
-        return quantity
+    fun setAmount(newAmount: Int) {
+        amount = newAmount;
     }
-
+    fun incrementAmount() {
+        amount++;
+    }
+    fun decrementAmount() {
+        amount--;
+    }
 }
